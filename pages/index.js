@@ -1,11 +1,16 @@
-import Head from 'next/head';
+import { IndexIcon, MainCont } from './../styled-components/reusables';
+import icon from './../public/index-logo-2.svg';
+import Header from './../components/Header.js';
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+// import { useState } from 'react';
 
 export default function Home() {
   return (
-    <div>
-      <h1>hello</h1>
-    </div>
+    <MainCont>
+      <Header />
+      <IndexIcon>
+        <Image src={icon} alt="" />
+      </IndexIcon>
+    </MainCont>
   );
 }
