@@ -97,9 +97,27 @@ export const ProjectDiv = styled.div`
   justify-content: center;
   align-items: center;
   border: ${(props) => props.border || 'dashed 5px #144444'};
-
+  /* background-image: url(${dashed}); */
   border-radius: 20px;
   text-align: center;
   margin: 1rem;
   padding: 1rem;
+
+  &:hover {
+    opacity: 0.5;
+    color: red;
+  }
+
+  @media (max-width: 720px) {
+    width: 21vw;
+    height: 18vh;
+    margin: 1rem;
+    font-size: 10px;
+  }
+  @media (max-width: 200px) {
+    width: 80vw;
+    height: 20vh;
+    margin: 1rem;
+    font-size: 10px;
+  }
 `;
