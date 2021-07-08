@@ -23,6 +23,19 @@ export const TechStackIcons = styled.div`
   &:hover {
     opacity: 0.5;
   }
+
+  @media (max-width: 730px) {
+    width: 21vw;
+    height: 18vh;
+    margin: 1rem;
+    font-size: 10px;
+  }
+  @media (max-width: 200px) {
+    width: 80vw;
+    height: 20vh;
+    margin: 1rem;
+    font-size: 10px;
+  }
 `;
 
 export const MainCont = styled.div`
