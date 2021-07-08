@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import dashed from './../public/dashed-sqr.svg';
 
 export const IndexIcon = styled.div`
   width: 80vw;
@@ -70,6 +71,15 @@ export const Choices = styled.h1`
   color: #144444;
   font-size: 2rem;
   margin: 1rem;
+  padding: 0.6rem;
+  &:hover {
+    border-bottom: solid 4px #144444;
+    border-radius: 10px;
+  }
+  &:active {
+    border: solid 5px #144444;
+    border-radius: 20px;
+  }
 `;
 export const IconText = styled.h3`
   margin: 0.7rem;
@@ -78,4 +88,18 @@ export const IconText = styled.h3`
   &:hover {
     color: red;
   }
+`;
+
+export const ProjectDiv = styled.div`
+  width: 11vw;
+  height: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: ${(props) => props.border || 'dashed 5px #144444'};
+
+  border-radius: 20px;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
 `;
