@@ -1,10 +1,13 @@
 import Header from './../components/Header';
+import { MainCont } from './../styled-components/reusables';
 
 export default function Socials() {
   return (
     <>
       <Header />
-      <h1>socials</h1>;
+      <MainCont>
+        <h1>COMING SOON</h1>;
+      </MainCont>
     </>
   );
 }
